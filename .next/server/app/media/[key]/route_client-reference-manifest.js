@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/media/[key]/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"/Users/firosvk/Desktop/Node Web/dco-app-2/app/media/[key]/route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};

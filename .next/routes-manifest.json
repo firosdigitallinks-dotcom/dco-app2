@@ -1,0 +1,971 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/baygon-details.html",
+      "destination": "/product/baygon.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/baygon-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/clean-glass-cloth-30-cm-pack-of-5-pieces-details.html",
+      "destination": "/product/clean-glass-cloth-30-cm-pack-of-5-pieces.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/clean-glass-cloth-30-cm-pack-of-5-pieces-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/dish-wash-liquidregular-details.html",
+      "destination": "/product/dish-wash-liquidregular.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/dish-wash-liquidregular-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/double-bucket-trolley-nick-50-l-details.html",
+      "destination": "/product/double-bucket-trolley-nick-50-l.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/double-bucket-trolley-nick-50-l-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/feminine-sanitary-bins-details.html",
+      "destination": "/product/feminine-sanitary-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/feminine-sanitary-bins-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/furniture-polish-details.html",
+      "destination": "/product/furniture-polish.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/furniture-polish-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/furniture-polish-uae-details.html",
+      "destination": "/product/furniture-polish.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/furniture-polish-uae-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/hygiene-links-uv-protected-cable-ties-details.html",
+      "destination": "/product/hygiene-links-uv-protected-cable-ties.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/hygiene-links-uv-protected-cable-ties-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/brooms-and-mops-uae.html",
+      "destination": "/products/brooms-and-mops-oman",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/brooms-and-mops-uae\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/detergent-disinfectants-oman",
+      "destination": "/products/detergent-disinfectants-uae.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/detergent-disinfectants-oman(?:/)?$"
+    },
+    {
+      "source": "/products/garbage-bins-oman.html",
+      "destination": "/products/garbage-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/garbage-bins-oman\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/garbage-bins-uae",
+      "destination": "/products/garbage-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/garbage-bins-uae(?:/)?$"
+    },
+    {
+      "source": "/products/hand-sanitizer-oman.html",
+      "destination": "/products/hand-sanitizer.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/hand-sanitizer-oman\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/mop-buckets-trolley-oman",
+      "destination": "/products/mop-buckets-trolley-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/mop-buckets-trolley-oman(?:/)?$"
+    },
+    {
+      "source": "/products/soap-dispensers-oman.html",
+      "destination": "/products/soap-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/soap-dispensers-oman\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/tissue-dispensers.html",
+      "destination": "/products/tissue-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/tissue-dispensers\\.html(?:/)?$"
+    },
+    {
+      "source": "/products/washroom-products-oman.html",
+      "destination": "/products/washroom-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/products/washroom-products-oman\\.html(?:/)?$"
+    },
+    {
+      "source": "/safety-helmet-details.html",
+      "destination": "/product/safety-helmet.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/safety-helmet-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/safety-jacket-details.html",
+      "destination": "/product/safety-jacket.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/safety-jacket-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/safety-shoes-details.html",
+      "destination": "/product/safety-shoes.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/safety-shoes-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/single-bucket-trolley-partition-action-pro-30l-red-details.html",
+      "destination": "/product/single-bucket-trolley-partition-action-pro-30l-red.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/single-bucket-trolley-partition-action-pro-30l-red-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/swimming-pool-cleaning-chemicals-details.html",
+      "destination": "/product/swimming-pool-cleaning-chemicals.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/swimming-pool-cleaning-chemicals-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/toilet-roll-details.html",
+      "destination": "/product/toilet-roll.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/toilet-roll-details\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/air-fresheners.html",
+      "destination": "/products/air-fresheners-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/air-fresheners\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/air-fresheners",
+      "destination": "/products/air-fresheners-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/air-fresheners(?:/)?$"
+    },
+    {
+      "source": "/category/all-purpose-cleaner.html",
+      "destination": "/products/all-purpose-cleaner.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/all-purpose-cleaner\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/all-purpose-cleaner",
+      "destination": "/products/all-purpose-cleaner.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/all-purpose-cleaner(?:/)?$"
+    },
+    {
+      "source": "/category/branded-cleaning-chemicals.html",
+      "destination": "/products/branded-cleaning-chemicals.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/branded-cleaning-chemicals\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/branded-cleaning-chemicals",
+      "destination": "/products/branded-cleaning-chemicals.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/branded-cleaning-chemicals(?:/)?$"
+    },
+    {
+      "source": "/category/brooms-and-mops.html",
+      "destination": "/products/brooms-and-mops-oman",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/brooms-and-mops\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/brooms-and-mops",
+      "destination": "/products/brooms-and-mops-oman",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/brooms-and-mops(?:/)?$"
+    },
+    {
+      "source": "/category/car-care-products.html",
+      "destination": "/products/car-care-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/car-care-products\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/car-care-products",
+      "destination": "/products/car-care-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/car-care-products(?:/)?$"
+    },
+    {
+      "source": "/category/detergent-disinfectants.html",
+      "destination": "/products/detergent-disinfectants-uae.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/detergent-disinfectants\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/detergent-disinfectants",
+      "destination": "/products/detergent-disinfectants-uae.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/detergent-disinfectants(?:/)?$"
+    },
+    {
+      "source": "/category/dish-wash.html",
+      "destination": "/products/dish-wash.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/dish-wash\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/dish-wash",
+      "destination": "/products/dish-wash.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/dish-wash(?:/)?$"
+    },
+    {
+      "source": "/category/disinfectants.html",
+      "destination": "/products/disinfectants-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/disinfectants\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/disinfectants",
+      "destination": "/products/disinfectants-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/disinfectants(?:/)?$"
+    },
+    {
+      "source": "/category/feather-duster.html",
+      "destination": "/products/feather-duster.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/feather-duster\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/feather-duster",
+      "destination": "/products/feather-duster.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/feather-duster(?:/)?$"
+    },
+    {
+      "source": "/category/floor-glass-wiper.html",
+      "destination": "/products/floor-glass-wiper.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/floor-glass-wiper\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/floor-glass-wiper",
+      "destination": "/products/floor-glass-wiper.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/floor-glass-wiper(?:/)?$"
+    },
+    {
+      "source": "/category/garbage-bags.html",
+      "destination": "/products/garbage-bags.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/garbage-bags\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/garbage-bags",
+      "destination": "/products/garbage-bags.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/garbage-bags(?:/)?$"
+    },
+    {
+      "source": "/category/garbage-bins.html",
+      "destination": "/products/garbage-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/garbage-bins\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/garbage-bins",
+      "destination": "/products/garbage-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/garbage-bins(?:/)?$"
+    },
+    {
+      "source": "/category/glass-clothes.html",
+      "destination": "/products/glass-clothes.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/glass-clothes\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/glass-clothes",
+      "destination": "/products/glass-clothes.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/glass-clothes(?:/)?$"
+    },
+    {
+      "source": "/category/hand-sanitizer-dispenser.html",
+      "destination": "/products/hand-sanitizer-dispenser.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-sanitizer-dispenser\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/hand-sanitizer-dispenser",
+      "destination": "/products/hand-sanitizer-dispenser.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-sanitizer-dispenser(?:/)?$"
+    },
+    {
+      "source": "/category/hand-sanitizer.html",
+      "destination": "/products/hand-sanitizer.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-sanitizer\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/hand-sanitizer",
+      "destination": "/products/hand-sanitizer.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-sanitizer(?:/)?$"
+    },
+    {
+      "source": "/category/hand-soap.html",
+      "destination": "/products/hand-soap.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-soap\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/hand-soap",
+      "destination": "/products/hand-soap.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hand-soap(?:/)?$"
+    },
+    {
+      "source": "/category/hygiene-links-uv-protected-cable-ties.html",
+      "destination": "/products/hygiene-links-uv-protected-cable-ties.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hygiene-links-uv-protected-cable-ties\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/hygiene-links-uv-protected-cable-ties",
+      "destination": "/products/hygiene-links-uv-protected-cable-ties.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/hygiene-links-uv-protected-cable-ties(?:/)?$"
+    },
+    {
+      "source": "/category/insect-killer.html",
+      "destination": "/products/insect-killer.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/insect-killer\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/insect-killer",
+      "destination": "/products/insect-killer.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/insect-killer(?:/)?$"
+    },
+    {
+      "source": "/category/laundry-bags.html",
+      "destination": "/products/laundry-bags.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/laundry-bags\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/laundry-bags",
+      "destination": "/products/laundry-bags.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/laundry-bags(?:/)?$"
+    },
+    {
+      "source": "/category/mop-buckets-trolley.html",
+      "destination": "/products/mop-buckets-trolley-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/mop-buckets-trolley\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/mop-buckets-trolley",
+      "destination": "/products/mop-buckets-trolley-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/mop-buckets-trolley(?:/)?$"
+    },
+    {
+      "source": "/category/mops-and-clips.html",
+      "destination": "/products/mops-and-clips-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/mops-and-clips\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/mops-and-clips",
+      "destination": "/products/mops-and-clips-oman.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/mops-and-clips(?:/)?$"
+    },
+    {
+      "source": "/category/multi-purpose-detergents.html",
+      "destination": "/products/multi-purpose-detergents-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/multi-purpose-detergents\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/multi-purpose-detergents",
+      "destination": "/products/multi-purpose-detergents-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/multi-purpose-detergents(?:/)?$"
+    },
+    {
+      "source": "/category/other-products.html",
+      "destination": "/products/other-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/other-products\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/other-products",
+      "destination": "/products/other-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/other-products(?:/)?$"
+    },
+    {
+      "source": "/category/soap-dispensers.html",
+      "destination": "/products/soap-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/soap-dispensers\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/soap-dispensers",
+      "destination": "/products/soap-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/soap-dispensers(?:/)?$"
+    },
+    {
+      "source": "/category/steel-bins.html",
+      "destination": "/products/steel-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/steel-bins\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/steel-bins",
+      "destination": "/products/steel-bins.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/steel-bins(?:/)?$"
+    },
+    {
+      "source": "/category/tissue-dispensers.html",
+      "destination": "/products/tissue-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/tissue-dispensers\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/tissue-dispensers",
+      "destination": "/products/tissue-dispensers-uae",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/tissue-dispensers(?:/)?$"
+    },
+    {
+      "source": "/category/tissue-products.html",
+      "destination": "/products/tissue-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/tissue-products\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/tissue-products",
+      "destination": "/products/tissue-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/tissue-products(?:/)?$"
+    },
+    {
+      "source": "/category/trolleys.html",
+      "destination": "/products/trolleys.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/trolleys\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/trolleys",
+      "destination": "/products/trolleys.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/trolleys(?:/)?$"
+    },
+    {
+      "source": "/category/washroom-products.html",
+      "destination": "/products/washroom-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/washroom-products\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/washroom-products",
+      "destination": "/products/washroom-products.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/washroom-products(?:/)?$"
+    },
+    {
+      "source": "/category/waste-bin.html",
+      "destination": "/products/waste-bin-1.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/waste-bin\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/waste-bin",
+      "destination": "/products/waste-bin-1.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/waste-bin(?:/)?$"
+    },
+    {
+      "source": "/category/window-washers.html",
+      "destination": "/products/window-washers.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/window-washers\\.html(?:/)?$"
+    },
+    {
+      "source": "/category/window-washers",
+      "destination": "/products/window-washers.html",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/category/window-washers(?:/)?$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "0"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), browsing-topics=(), payment=(), usb=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://connect.facebook.net https://www.facebook.com; frame-src 'self' https://www.google.com https://www.youtube.com https://www.youtube-nocookie.com https://www.googletagmanager.com; worker-src 'self' blob:; upgrade-insecure-requests"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/admin/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        }
+      ],
+      "regex": "^/admin(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        }
+      ],
+      "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/products/air-fresheners-oman.html",
+        "destination": "/category/air-fresheners.html",
+        "regex": "^/products/air-fresheners-oman\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/all-purpose-cleaner.html",
+        "destination": "/category/all-purpose-cleaner.html",
+        "regex": "^/products/all-purpose-cleaner\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/branded-cleaning-chemicals.html",
+        "destination": "/category/branded-cleaning-chemicals.html",
+        "regex": "^/products/branded-cleaning-chemicals\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/brooms-and-mops-oman",
+        "destination": "/category/brooms-and-mops.html",
+        "regex": "^/products/brooms-and-mops-oman(?:/)?$"
+      },
+      {
+        "source": "/products/car-care-products.html",
+        "destination": "/category/car-care-products.html",
+        "regex": "^/products/car-care-products\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/detergent-disinfectants-uae.html",
+        "destination": "/category/detergent-disinfectants.html",
+        "regex": "^/products/detergent-disinfectants-uae\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/dish-wash.html",
+        "destination": "/category/dish-wash.html",
+        "regex": "^/products/dish-wash\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/disinfectants-oman.html",
+        "destination": "/category/disinfectants.html",
+        "regex": "^/products/disinfectants-oman\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/feather-duster.html",
+        "destination": "/category/feather-duster.html",
+        "regex": "^/products/feather-duster\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/floor-glass-wiper.html",
+        "destination": "/category/floor-glass-wiper.html",
+        "regex": "^/products/floor-glass-wiper\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/garbage-bags.html",
+        "destination": "/category/garbage-bags.html",
+        "regex": "^/products/garbage-bags\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/garbage-bins.html",
+        "destination": "/category/garbage-bins.html",
+        "regex": "^/products/garbage-bins\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/glass-clothes.html",
+        "destination": "/category/glass-clothes.html",
+        "regex": "^/products/glass-clothes\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/hand-sanitizer-dispenser.html",
+        "destination": "/category/hand-sanitizer-dispenser.html",
+        "regex": "^/products/hand-sanitizer-dispenser\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/hand-sanitizer.html",
+        "destination": "/category/hand-sanitizer.html",
+        "regex": "^/products/hand-sanitizer\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/hand-soap.html",
+        "destination": "/category/hand-soap.html",
+        "regex": "^/products/hand-soap\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/hygiene-links-uv-protected-cable-ties.html",
+        "destination": "/category/hygiene-links-uv-protected-cable-ties.html",
+        "regex": "^/products/hygiene-links-uv-protected-cable-ties\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/insect-killer.html",
+        "destination": "/category/insect-killer.html",
+        "regex": "^/products/insect-killer\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/laundry-bags.html",
+        "destination": "/category/laundry-bags.html",
+        "regex": "^/products/laundry-bags\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/mop-buckets-trolley-uae",
+        "destination": "/category/mop-buckets-trolley.html",
+        "regex": "^/products/mop-buckets-trolley-uae(?:/)?$"
+      },
+      {
+        "source": "/products/mops-and-clips-oman.html",
+        "destination": "/category/mops-and-clips.html",
+        "regex": "^/products/mops-and-clips-oman\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/multi-purpose-detergents-uae",
+        "destination": "/category/multi-purpose-detergents.html",
+        "regex": "^/products/multi-purpose-detergents-uae(?:/)?$"
+      },
+      {
+        "source": "/products/other-products.html",
+        "destination": "/category/other-products.html",
+        "regex": "^/products/other-products\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/soap-dispensers-uae",
+        "destination": "/category/soap-dispensers.html",
+        "regex": "^/products/soap-dispensers-uae(?:/)?$"
+      },
+      {
+        "source": "/products/steel-bins.html",
+        "destination": "/category/steel-bins.html",
+        "regex": "^/products/steel-bins\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/tissue-dispensers-uae",
+        "destination": "/category/tissue-dispensers.html",
+        "regex": "^/products/tissue-dispensers-uae(?:/)?$"
+      },
+      {
+        "source": "/products/tissue-products.html",
+        "destination": "/category/tissue-products.html",
+        "regex": "^/products/tissue-products\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/trolleys.html",
+        "destination": "/category/trolleys.html",
+        "regex": "^/products/trolleys\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/washroom-products.html",
+        "destination": "/category/washroom-products.html",
+        "regex": "^/products/washroom-products\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/waste-bin-1.html",
+        "destination": "/category/waste-bin.html",
+        "regex": "^/products/waste-bin-1\\.html(?:/)?$"
+      },
+      {
+        "source": "/products/window-washers.html",
+        "destination": "/category/window-washers.html",
+        "regex": "^/products/window-washers\\.html(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/blog/details/[slug]",
+      "regex": "^/blog/details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/blog/details/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/blog/[offset]",
+      "regex": "^/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPoffset": "nxtPoffset"
+      },
+      "namedRegex": "^/blog/(?<nxtPoffset>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/category/[slug]",
+      "regex": "^/category/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/category/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/media/[key]",
+      "regex": "^/media/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPkey": "nxtPkey"
+      },
+      "namedRegex": "^/media/(?<nxtPkey>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/product/[slug]",
+      "regex": "^/product/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/product/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/about.html",
+      "regex": "^/about\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\.html(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/api/admin/data",
+      "regex": "^/api/admin/data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/data(?:/)?$"
+    },
+    {
+      "page": "/api/admin/session",
+      "regex": "^/api/admin/session(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/session(?:/)?$"
+    },
+    {
+      "page": "/api/admin/upload",
+      "regex": "^/api/admin/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/upload(?:/)?$"
+    },
+    {
+      "page": "/api/inquiries",
+      "regex": "^/api/inquiries(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/inquiries(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/blog.html",
+      "regex": "^/blog\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog\\.html(?:/)?$"
+    },
+    {
+      "page": "/catalog",
+      "regex": "^/catalog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog(?:/)?$"
+    },
+    {
+      "page": "/catalog.html",
+      "regex": "^/catalog\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalog\\.html(?:/)?$"
+    },
+    {
+      "page": "/chairmans-message.html",
+      "regex": "^/chairmans\\-message\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/chairmans\\-message\\.html(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/contact.html",
+      "regex": "^/contact\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\.html(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/faq.html",
+      "regex": "^/faq\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq\\.html(?:/)?$"
+    },
+    {
+      "page": "/index.html",
+      "regex": "^/index\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/index\\.html(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/vision-mission.html",
+      "regex": "^/vision\\-mission\\.html(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/vision\\-mission\\.html(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

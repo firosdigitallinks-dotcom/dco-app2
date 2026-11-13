@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785164252783,
+      "tag": "0000_warm_spitfire",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785480360372,
+      "tag": "0001_loose_sasquatch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785510615431,
+      "tag": "0002_dry_blackheart",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1785921557341,
+      "tag": "0003_robust_vector",
+      "breakpoints": true
+    }
+  ]
+}

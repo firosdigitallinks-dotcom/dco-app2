@@ -1,0 +1,848 @@
+{
+  "version": "hygienelinks-public-clients-2026-08-05",
+  "source": "https://www.hygienelinks.com/",
+  "importedAt": "2026-08-05T09:29:52.323Z",
+  "count": 84,
+  "clients": [
+    {
+      "id": "imported-client-uae-001",
+      "name": "Petron",
+      "imageUrl": "/client-logos/imported/uae-001.jpeg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 1,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(1).jpeg"
+    },
+    {
+      "id": "imported-client-uae-002",
+      "name": "Al Shirawi FM",
+      "imageUrl": "/client-logos/imported/uae-002.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 2,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(2).jpg"
+    },
+    {
+      "id": "imported-client-uae-003",
+      "name": "NAFFCO",
+      "imageUrl": "/client-logos/imported/uae-003.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 3,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(1).png"
+    },
+    {
+      "id": "imported-client-uae-004",
+      "name": "UAE Client 04",
+      "imageUrl": "/client-logos/imported/uae-004.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 4,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(2).png"
+    },
+    {
+      "id": "imported-client-uae-005",
+      "name": "Al Masa Contracting",
+      "imageUrl": "/client-logos/imported/uae-005.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 5,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(3).JPG"
+    },
+    {
+      "id": "imported-client-uae-006",
+      "name": "UAE Client 06",
+      "imageUrl": "/client-logos/imported/uae-006.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 6,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(3).png"
+    },
+    {
+      "id": "imported-client-uae-007",
+      "name": "BurJuman",
+      "imageUrl": "/client-logos/imported/uae-007.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 7,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(4).jpg"
+    },
+    {
+      "id": "imported-client-uae-008",
+      "name": "UAE Client 08",
+      "imageUrl": "/client-logos/imported/uae-008.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 8,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(4).png"
+    },
+    {
+      "id": "imported-client-uae-009",
+      "name": "UAE Client 09",
+      "imageUrl": "/client-logos/imported/uae-009.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 9,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(5).jpg"
+    },
+    {
+      "id": "imported-client-uae-010",
+      "name": "UAE Client 10",
+      "imageUrl": "/client-logos/imported/uae-010.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 10,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(5).png"
+    },
+    {
+      "id": "imported-client-uae-011",
+      "name": "UAE Client 11",
+      "imageUrl": "/client-logos/imported/uae-011.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 11,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(6).jpg"
+    },
+    {
+      "id": "imported-client-uae-012",
+      "name": "UAE Client 12",
+      "imageUrl": "/client-logos/imported/uae-012.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 12,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(6).png"
+    },
+    {
+      "id": "imported-client-uae-013",
+      "name": "UAE Client 13",
+      "imageUrl": "/client-logos/imported/uae-013.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 13,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(7).jpg"
+    },
+    {
+      "id": "imported-client-uae-014",
+      "name": "UAE Client 14",
+      "imageUrl": "/client-logos/imported/uae-014.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 14,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(7).png"
+    },
+    {
+      "id": "imported-client-uae-015",
+      "name": "UAE Client 15",
+      "imageUrl": "/client-logos/imported/uae-015.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 15,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(8).jpg"
+    },
+    {
+      "id": "imported-client-uae-016",
+      "name": "UAE Client 16",
+      "imageUrl": "/client-logos/imported/uae-016.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 16,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(8).png"
+    },
+    {
+      "id": "imported-client-uae-017",
+      "name": "UAE Client 17",
+      "imageUrl": "/client-logos/imported/uae-017.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 17,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(9).jpg"
+    },
+    {
+      "id": "imported-client-uae-018",
+      "name": "UAE Client 18",
+      "imageUrl": "/client-logos/imported/uae-018.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 18,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(9).png"
+    },
+    {
+      "id": "imported-client-uae-019",
+      "name": "UAE Client 19",
+      "imageUrl": "/client-logos/imported/uae-019.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 19,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(10).jpg"
+    },
+    {
+      "id": "imported-client-uae-020",
+      "name": "UAE Client 20",
+      "imageUrl": "/client-logos/imported/uae-020.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 20,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(10).png"
+    },
+    {
+      "id": "imported-client-uae-021",
+      "name": "UAE Client 21",
+      "imageUrl": "/client-logos/imported/uae-021.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 21,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(11).jpg"
+    },
+    {
+      "id": "imported-client-uae-022",
+      "name": "UAE Client 22",
+      "imageUrl": "/client-logos/imported/uae-022.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 22,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(11).png"
+    },
+    {
+      "id": "imported-client-uae-023",
+      "name": "UAE Client 23",
+      "imageUrl": "/client-logos/imported/uae-023.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 23,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(12).jpg"
+    },
+    {
+      "id": "imported-client-uae-024",
+      "name": "UAE Client 24",
+      "imageUrl": "/client-logos/imported/uae-024.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 24,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(12).png"
+    },
+    {
+      "id": "imported-client-uae-025",
+      "name": "UAE Client 25",
+      "imageUrl": "/client-logos/imported/uae-025.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 25,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(13).jpg"
+    },
+    {
+      "id": "imported-client-uae-026",
+      "name": "UAE Client 26",
+      "imageUrl": "/client-logos/imported/uae-026.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 26,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(13).png"
+    },
+    {
+      "id": "imported-client-uae-027",
+      "name": "UAE Client 27",
+      "imageUrl": "/client-logos/imported/uae-027.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 27,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(14).jpg"
+    },
+    {
+      "id": "imported-client-uae-028",
+      "name": "UAE Client 28",
+      "imageUrl": "/client-logos/imported/uae-028.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 28,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(14).png"
+    },
+    {
+      "id": "imported-client-uae-029",
+      "name": "UAE Client 29",
+      "imageUrl": "/client-logos/imported/uae-029.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 29,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(15).jpg"
+    },
+    {
+      "id": "imported-client-uae-030",
+      "name": "UAE Client 30",
+      "imageUrl": "/client-logos/imported/uae-030.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 30,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/transgulf.jpg"
+    },
+    {
+      "id": "imported-client-uae-031",
+      "name": "UAE Client 31",
+      "imageUrl": "/client-logos/imported/uae-031.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 31,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(16).jpg"
+    },
+    {
+      "id": "imported-client-uae-032",
+      "name": "UAE Client 32",
+      "imageUrl": "/client-logos/imported/uae-032.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 32,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(16).png"
+    },
+    {
+      "id": "imported-client-uae-033",
+      "name": "UAE Client 33",
+      "imageUrl": "/client-logos/imported/uae-033.jpg",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 33,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(17).jpg"
+    },
+    {
+      "id": "imported-client-uae-034",
+      "name": "UAE Client 34",
+      "imageUrl": "/client-logos/imported/uae-034.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 34,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(17).png"
+    },
+    {
+      "id": "imported-client-uae-035",
+      "name": "UAE Client 35",
+      "imageUrl": "/client-logos/imported/uae-035.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 35,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(18).png"
+    },
+    {
+      "id": "imported-client-uae-036",
+      "name": "UAE Client 36",
+      "imageUrl": "/client-logos/imported/uae-036.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 36,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(19).png"
+    },
+    {
+      "id": "imported-client-uae-037",
+      "name": "UAE Client 37",
+      "imageUrl": "/client-logos/imported/uae-037.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 37,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(20).png"
+    },
+    {
+      "id": "imported-client-uae-038",
+      "name": "UAE Client 38",
+      "imageUrl": "/client-logos/imported/uae-038.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 38,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(21).png"
+    },
+    {
+      "id": "imported-client-uae-039",
+      "name": "UAE Client 39",
+      "imageUrl": "/client-logos/imported/uae-039.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 39,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(22).png"
+    },
+    {
+      "id": "imported-client-uae-040",
+      "name": "UAE Client 40",
+      "imageUrl": "/client-logos/imported/uae-040.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 40,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(23).png"
+    },
+    {
+      "id": "imported-client-uae-041",
+      "name": "UAE Client 41",
+      "imageUrl": "/client-logos/imported/uae-041.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 41,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(24).png"
+    },
+    {
+      "id": "imported-client-uae-042",
+      "name": "UAE Client 42",
+      "imageUrl": "/client-logos/imported/uae-042.png",
+      "websiteUrl": "",
+      "market": "UAE",
+      "published": true,
+      "sortOrder": 42,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/uae%20(25).png"
+    },
+    {
+      "id": "imported-client-oman-001",
+      "name": "Oman Client 01",
+      "imageUrl": "/client-logos/imported/oman-001.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 43,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(1).jpg"
+    },
+    {
+      "id": "imported-client-oman-002",
+      "name": "Oman Client 02",
+      "imageUrl": "/client-logos/imported/oman-002.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 44,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(1).png"
+    },
+    {
+      "id": "imported-client-oman-003",
+      "name": "Oman Client 03",
+      "imageUrl": "/client-logos/imported/oman-003.webp",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 45,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(1).webp"
+    },
+    {
+      "id": "imported-client-oman-004",
+      "name": "Oman Client 04",
+      "imageUrl": "/client-logos/imported/oman-004.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 46,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(2).jpg"
+    },
+    {
+      "id": "imported-client-oman-005",
+      "name": "Oman Client 05",
+      "imageUrl": "/client-logos/imported/oman-005.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 47,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(2).png"
+    },
+    {
+      "id": "imported-client-oman-006",
+      "name": "Oman Client 06",
+      "imageUrl": "/client-logos/imported/oman-006.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 48,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(3).jpg"
+    },
+    {
+      "id": "imported-client-oman-007",
+      "name": "Oman Client 07",
+      "imageUrl": "/client-logos/imported/oman-007.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 49,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(3).png"
+    },
+    {
+      "id": "imported-client-oman-008",
+      "name": "Oman Client 08",
+      "imageUrl": "/client-logos/imported/oman-008.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 50,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(4).jpg"
+    },
+    {
+      "id": "imported-client-oman-009",
+      "name": "Oman Client 09",
+      "imageUrl": "/client-logos/imported/oman-009.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 51,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(4).png"
+    },
+    {
+      "id": "imported-client-oman-010",
+      "name": "Oman Client 10",
+      "imageUrl": "/client-logos/imported/oman-010.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 52,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(5).jpg"
+    },
+    {
+      "id": "imported-client-oman-011",
+      "name": "Oman Client 11",
+      "imageUrl": "/client-logos/imported/oman-011.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 53,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(5).png"
+    },
+    {
+      "id": "imported-client-oman-012",
+      "name": "Oman Client 12",
+      "imageUrl": "/client-logos/imported/oman-012.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 54,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(6).jpg"
+    },
+    {
+      "id": "imported-client-oman-013",
+      "name": "Oman Client 13",
+      "imageUrl": "/client-logos/imported/oman-013.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 55,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(6).png"
+    },
+    {
+      "id": "imported-client-oman-014",
+      "name": "Oman Client 14",
+      "imageUrl": "/client-logos/imported/oman-014.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 56,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(7).jpg"
+    },
+    {
+      "id": "imported-client-oman-015",
+      "name": "Oman Client 15",
+      "imageUrl": "/client-logos/imported/oman-015.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 57,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(7).png"
+    },
+    {
+      "id": "imported-client-oman-016",
+      "name": "Oman Client 16",
+      "imageUrl": "/client-logos/imported/oman-016.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 58,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(8).jpg"
+    },
+    {
+      "id": "imported-client-oman-017",
+      "name": "Oman Client 17",
+      "imageUrl": "/client-logos/imported/oman-017.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 59,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(8).png"
+    },
+    {
+      "id": "imported-client-oman-018",
+      "name": "Oman Client 18",
+      "imageUrl": "/client-logos/imported/oman-018.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 60,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(9).jpg"
+    },
+    {
+      "id": "imported-client-oman-019",
+      "name": "Oman Client 19",
+      "imageUrl": "/client-logos/imported/oman-019.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 61,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(9).png"
+    },
+    {
+      "id": "imported-client-oman-020",
+      "name": "Oman Client 20",
+      "imageUrl": "/client-logos/imported/oman-020.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 62,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(10).JPG"
+    },
+    {
+      "id": "imported-client-oman-021",
+      "name": "Oman Client 21",
+      "imageUrl": "/client-logos/imported/oman-021.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 63,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(10).png"
+    },
+    {
+      "id": "imported-client-oman-022",
+      "name": "Oman Client 22",
+      "imageUrl": "/client-logos/imported/oman-022.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 64,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(11).jpg"
+    },
+    {
+      "id": "imported-client-oman-023",
+      "name": "Oman Client 23",
+      "imageUrl": "/client-logos/imported/oman-023.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 65,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(11).png"
+    },
+    {
+      "id": "imported-client-oman-024",
+      "name": "Oman Client 24",
+      "imageUrl": "/client-logos/imported/oman-024.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 66,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(12).jpg"
+    },
+    {
+      "id": "imported-client-oman-025",
+      "name": "Oman Client 25",
+      "imageUrl": "/client-logos/imported/oman-025.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 67,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(12).png"
+    },
+    {
+      "id": "imported-client-oman-026",
+      "name": "Oman Client 26",
+      "imageUrl": "/client-logos/imported/oman-026.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 68,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(13).jpg"
+    },
+    {
+      "id": "imported-client-oman-027",
+      "name": "Oman Client 27",
+      "imageUrl": "/client-logos/imported/oman-027.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 69,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(13).png"
+    },
+    {
+      "id": "imported-client-oman-028",
+      "name": "Oman Client 28",
+      "imageUrl": "/client-logos/imported/oman-028.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 70,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(14).JPG"
+    },
+    {
+      "id": "imported-client-oman-029",
+      "name": "Oman Client 29",
+      "imageUrl": "/client-logos/imported/oman-029.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 71,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(14).png"
+    },
+    {
+      "id": "imported-client-oman-030",
+      "name": "Oman Client 30",
+      "imageUrl": "/client-logos/imported/oman-030.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 72,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(15).jpg"
+    },
+    {
+      "id": "imported-client-oman-031",
+      "name": "Oman Client 31",
+      "imageUrl": "/client-logos/imported/oman-031.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 73,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(15).png"
+    },
+    {
+      "id": "imported-client-oman-032",
+      "name": "Oman Client 32",
+      "imageUrl": "/client-logos/imported/oman-032.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 74,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/oman%20(16).png"
+    },
+    {
+      "id": "imported-client-oman-033",
+      "name": "Oman Client 33",
+      "imageUrl": "/client-logos/imported/oman-033.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 75,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(17).png"
+    },
+    {
+      "id": "imported-client-oman-034",
+      "name": "Oman Client 34",
+      "imageUrl": "/client-logos/imported/oman-034.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 76,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(17).jpg"
+    },
+    {
+      "id": "imported-client-oman-035",
+      "name": "Oman Client 35",
+      "imageUrl": "/client-logos/imported/oman-035.jpg",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 77,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(18).jpg"
+    },
+    {
+      "id": "imported-client-oman-036",
+      "name": "Oman Client 36",
+      "imageUrl": "/client-logos/imported/oman-036.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 78,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(18).png"
+    },
+    {
+      "id": "imported-client-oman-037",
+      "name": "Oman Client 37",
+      "imageUrl": "/client-logos/imported/oman-037.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 79,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(19).png"
+    },
+    {
+      "id": "imported-client-oman-038",
+      "name": "Oman Client 38",
+      "imageUrl": "/client-logos/imported/oman-038.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 80,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(20).png"
+    },
+    {
+      "id": "imported-client-oman-039",
+      "name": "Oman Client 39",
+      "imageUrl": "/client-logos/imported/oman-039.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 81,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(21).png"
+    },
+    {
+      "id": "imported-client-oman-040",
+      "name": "Oman Client 40",
+      "imageUrl": "/client-logos/imported/oman-040.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 82,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(22).png"
+    },
+    {
+      "id": "imported-client-oman-041",
+      "name": "Oman Client 41",
+      "imageUrl": "/client-logos/imported/oman-041.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 83,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(23).png"
+    },
+    {
+      "id": "imported-client-oman-042",
+      "name": "Oman Client 42",
+      "imageUrl": "/client-logos/imported/oman-042.png",
+      "websiteUrl": "",
+      "market": "OMAN",
+      "published": true,
+      "sortOrder": 84,
+      "sourceUrl": "https://hygienelinks.com/assets/images/clients/a%20(24).png"
+    }
+  ]
+}

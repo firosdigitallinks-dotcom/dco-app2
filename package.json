@@ -1,0 +1,44 @@
+{
+  "name": "dco-app-2",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "audit:site": "node scripts/audit-public-site.mjs",
+    "db:generate": "drizzle-kit generate",
+    "cms:password": "node scripts/hash-cms-password.mjs"
+  },
+  "dependencies": {
+    "drizzle-orm": "0.45.2",
+    "mysql2": "^3.24.4",
+    "next": "16.4.6",
+    "nodemailer": "^10.0.10",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "sanitize-html": "^2.17.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/nodemailer": "^7.0.12",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/sanitize-html": "2.16.0",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "^16.3.0",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  },
+  "type": "module",
+  "optionalDependencies": {
+    "lightningcss-darwin-arm64": "^1.33.0"
+  }
+}

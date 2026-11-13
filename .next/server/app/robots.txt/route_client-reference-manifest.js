@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/robots.txt/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"/Users/firosvk/Desktop/Node Web/dco-app-2/app/robots.txt/route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
