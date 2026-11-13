@@ -213,7 +213,7 @@ const server = createServer((req, res) => {
   }
 
   if (startupError) {
-    res.writeHead(500, { "Content-Type": "text/html; charset=utf-8" });
+    res.writeHead(500, { "Content-Type": "text/html" });
     res.end(
       `<!DOCTYPE html><html><body style="font-family:sans-serif;padding:40px;background:#fff5f5;color:#900"><h2>Application Startup Error</h2><pre style="background:#fff;padding:20px;border:1px solid #fcc;border-radius:6px;overflow:auto">${startupError?.stack || startupError}</pre></body></html>`,
     );
@@ -221,12 +221,11 @@ const server = createServer((req, res) => {
   }
 
   if (!isReady) {
-    res.writeHead(503, {
-      "Content-Type": "text/html; charset=utf-8",
-      "Retry-After": "2",
+    res.writeHead(200, {
+      "Content-Type": "text/html",
     });
     res.end(
-      `<!DOCTYPE html><html><body style="font-family:sans-serif;padding:40px;text-align:center"><h2>Application Starting Up...</h2><p>Please refresh in a few seconds.</p></body></html>`,
+      `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="2"></head><body style="font-family:sans-serif;padding:40px;text-align:center"><h2>Application Starting Up...</h2><p>Please refresh in a few seconds.</p></body></html>`,
     );
     return;
   }
