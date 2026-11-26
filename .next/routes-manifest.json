@@ -802,6 +802,14 @@
         "nxtPslug": "nxtPslug"
       },
       "namedRegex": "^/product/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[location]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocation": "nxtPlocation"
+      },
+      "namedRegex": "^/(?<nxtPlocation>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [

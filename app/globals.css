@@ -12016,3 +12016,237 @@ body h1 {
   }
 }
 
+
+/* Location Pages */
+.location-hero {
+  position: relative;
+  padding: 120px 0 60px;
+  background: radial-gradient(circle at 18% 18%, #2d0a27 0%, #150412 58%, #0d020c 100%);
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.location-hero .breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.location-hero .breadcrumbs a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.location-hero .breadcrumbs a:hover {
+  color: var(--white);
+}
+
+.location-hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: var(--white);
+  letter-spacing: -0.03em;
+}
+
+.location-hero__subhead {
+  font-size: clamp(17px, 2.2vw, 21px);
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 28px;
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+.location-hero__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.location-content-section {
+  padding: 56px 0;
+}
+
+.location-intro-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 36px 40px;
+}
+
+.location-intro-box h2 {
+  font-size: clamp(22px, 2.8vw, 30px);
+  color: var(--navy-950);
+  margin: 0 0 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.location-intro-box p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.location-supply-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.location-supply-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.location-supply-card__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--mist-blue);
+  color: var(--blue-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.location-supply-card p {
+  margin: 0;
+  color: var(--navy-950);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.location-faq-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 32px 36px;
+}
+
+.location-faq-box h3 {
+  color: var(--navy-950);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.location-faq-box p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.location-products-card {
+  background: var(--mist);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 44px 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-products-card h2 {
+  font-size: clamp(22px, 2.8vw, 30px);
+  color: var(--navy-950);
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.location-products-card p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 24px;
+}
+
+.location-nearby-wrapper {
+  margin-bottom: 48px;
+}
+
+.location-nearby-wrapper h2 {
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: var(--navy-950);
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.location-nearby-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.location-nearby-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--navy-950);
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.location-nearby-chip:hover {
+  border-color: var(--blue-600);
+  color: var(--blue-600);
+}
+
+.location-quote-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.location-quote-box .form-heading {
+  margin-bottom: 24px;
+}
+
+.location-quote-box .form-heading h2 {
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--navy-950);
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.location-quote-box .form-heading span {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--blue-600);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .location-supply-grid {
+    grid-template-columns: 1fr;
+  }
+  .location-intro-box,
+  .location-quote-box,
+  .location-faq-box {
+    padding: 24px 20px;
+  }
+}

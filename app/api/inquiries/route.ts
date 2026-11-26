@@ -39,7 +39,11 @@ export async function POST(request: Request) {
 
     const name = text(body.name, 120);
     const email = text(body.email, 180).toLowerCase();
-    const message = text(body.message, 3000);
+    const location = text(body.location, 100);
+    let message = text(body.message, 3000);
+    if (location && !message.includes(`Location: ${location}`)) {
+      message = `[Location: ${location}]\n${message}`;
+    }
     const company = text(body.company, 180);
     const phone = text(body.phone, 80);
     const productName = text(body.productName, 180) || "General enquiry";

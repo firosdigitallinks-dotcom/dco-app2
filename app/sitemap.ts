@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { locationPages } from "../data/locations";
 import {
   getPublishedBlogSitemapEntries,
   getSiteData,
@@ -12,7 +13,7 @@ const BLOG_PAGE_SIZE = 12;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const data = await getSiteData();
-  const blogEntries = await getPublishedBlogSitemapEntries();
+  const blogEntries = await getPublishedBlogSitemapEntries().catch(() => []);
   const staticPageDefinitions: Array<
     MetadataRoute.Sitemap[number] & { seoKey: string }
   > = [
@@ -122,8 +123,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           }),
         );
 
+  const locationPageEntries: MetadataRoute.Sitemap = locationPages.map((loc) => ({
+    url: absoluteUrl(data.setting, `/${loc.slug}/`),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   return [
     ...staticPages,
+    ...locationPageEntries,
     ...blogArchivePages,
     ...categoryPages,
     ...productPages,
