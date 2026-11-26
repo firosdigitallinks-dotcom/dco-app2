@@ -35,13 +35,27 @@ process.on("unhandledRejection", (err) => {
 log("app.js booting...");
 
 // Automatically load production environment variables if present
-if (typeof process.loadEnvFile === "function") {
-  for (const file of [".env.production", ".env"]) {
-    if (fs.existsSync(file)) {
-      try {
+for (const file of [".env.production", ".env"]) {
+  if (fs.existsSync(file)) {
+    try {
+      if (typeof process.loadEnvFile === "function") {
         process.loadEnvFile(file);
-      } catch {}
-    }
+      } else {
+        const content = fs.readFileSync(file, "utf8");
+        for (const line of content.split("\n")) {
+          const trimmed = line.trim();
+          if (!trimmed || trimmed.startsWith("#")) continue;
+          const idx = trimmed.indexOf("=");
+          if (idx > 0) {
+            const key = trimmed.slice(0, idx).trim();
+            const val = trimmed.slice(idx + 1).trim();
+            if (!process.env[key]) {
+              process.env[key] = val;
+            }
+          }
+        }
+      }
+    } catch {}
   }
 }
 
@@ -213,7 +227,7 @@ const server = createServer((req, res) => {
   }
 
   if (startupError) {
-    res.writeHead(500, { "Content-Type": "text/html" });
+    res.writeHead(500, { "Content-Type": "text/html; charset=utf-8" });
     res.end(
       `<!DOCTYPE html><html><body style="font-family:sans-serif;padding:40px;background:#fff5f5;color:#900"><h2>Application Startup Error</h2><pre style="background:#fff;padding:20px;border:1px solid #fcc;border-radius:6px;overflow:auto">${startupError?.stack || startupError}</pre></body></html>`,
     );
@@ -221,11 +235,12 @@ const server = createServer((req, res) => {
   }
 
   if (!isReady) {
-    res.writeHead(200, {
-      "Content-Type": "text/html",
+    res.writeHead(503, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Retry-After": "2",
     });
     res.end(
-      `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="2"></head><body style="font-family:sans-serif;padding:40px;text-align:center"><h2>Application Starting Up...</h2><p>Please refresh in a few seconds.</p></body></html>`,
+      `<!DOCTYPE html><html><body style="font-family:sans-serif;padding:40px;text-align:center"><h2>Application Starting Up...</h2><p>Please refresh in a few seconds.</p></body></html>`,
     );
     return;
   }

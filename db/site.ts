@@ -2157,18 +2157,130 @@ function getFallbackSiteData() {
     robotsIndex: e.robotsIndex ?? true,
     updatedAt: new Date().toISOString(),
   }));
+
+  const nowIso = new Date().toISOString();
+
+  const fallbackCategories: Category[] = importedCategories.map((c) => ({
+    id: c.id,
+    name: c.name,
+    slug: c.slug,
+    description: c.description ?? "",
+    parentId: c.parentId ?? null,
+    imageUrl: c.imageUrl ?? "",
+    accent: c.accent ?? "blue",
+    featured: c.featured ?? false,
+    sortOrder: c.sortOrder ?? 0,
+    createdAt: nowIso,
+    updatedAt: nowIso,
+  }));
+
+  const fallbackProducts: Product[] = importedProducts.map((p) => ({
+    id: p.id,
+    name: p.name,
+    slug: p.slug,
+    sku: p.sku ?? "",
+    categoryId: p.categoryId,
+    summary: p.summary ?? "",
+    description: p.description ?? "",
+    imageUrl: p.imageUrl ?? "",
+    packSize: p.packSize ?? "",
+    applications: p.applications ?? "",
+    featured: p.featured ?? false,
+    eco: p.eco ?? false,
+    status: p.status ?? "published",
+    sortOrder: p.sortOrder ?? 0,
+    createdAt: nowIso,
+    updatedAt: nowIso,
+  }));
+
+  const fallbackEditorials: CatalogEditorial[] = seedCatalogEditorials.map((ed) => ({
+    key: ed.key,
+    pageType: ed.pageType,
+    slug: ed.slug,
+    label: ed.label,
+    blocksJson: ed.blocksJson,
+    sortOrder: ed.sortOrder ?? 0,
+    updatedAt: nowIso,
+  }));
+
+  const allSeoEntries: SeoEntry[] = [
+    ...fallbackSeo,
+    ...importedCategorySeo.map((e) => ({
+      key: e.key,
+      label: e.label,
+      entityType: e.entityType,
+      entityId: e.entityId,
+      metaTitle: e.metaTitle ?? "",
+      metaDescription: e.metaDescription ?? "",
+      keywords: (Array.isArray(e.keywords) ? e.keywords.join(", ") : e.keywords) ?? "",
+      canonicalPath: e.canonicalPath ?? "",
+      ogTitle: e.ogTitle ?? "",
+      ogDescription: e.ogDescription ?? "",
+      robotsIndex: e.robotsIndex ?? true,
+      updatedAt: nowIso,
+    })),
+    ...importedProductSeo.map((e) => ({
+      key: e.key,
+      label: e.label,
+      entityType: e.entityType,
+      entityId: e.entityId,
+      metaTitle: e.metaTitle ?? "",
+      metaDescription: e.metaDescription ?? "",
+      keywords: (Array.isArray(e.keywords) ? e.keywords.join(", ") : e.keywords) ?? "",
+      canonicalPath: e.canonicalPath ?? "",
+      ogTitle: e.ogTitle ?? "",
+      ogDescription: e.ogDescription ?? "",
+      robotsIndex: e.robotsIndex ?? true,
+      updatedAt: nowIso,
+    })),
+  ];
+
+  const fallbackBlogs: BlogPost[] = seedBlogPosts.map((b) => ({
+    id: b.id,
+    slug: b.slug,
+    legacySlug: b.legacySlug ?? b.slug,
+    sourceUrl: b.sourceUrl ?? null,
+    sourceHash: b.sourceHash ?? "",
+    title: b.title,
+    excerpt: b.excerpt ?? "",
+    bodyHtml: b.bodyHtml,
+    featuredImageUrl: b.featuredImageUrl ?? "",
+    imageAlt: b.imageAlt ?? "",
+    author: b.author ?? "Hygiene Links",
+    category: b.category ?? "Hygiene",
+    tags: b.tags ?? "",
+    publishedAt: b.publishedAt ?? null,
+    status: b.status ?? "published",
+    featured: b.featured ?? false,
+    sortOrder: b.sortOrder ?? 0,
+    createdAt: nowIso,
+    updatedAt: nowIso,
+  }));
+
+  const fallbackClientLogos: ClientLogo[] = seedClientLogos.map((l, idx) => ({
+    id: l.id,
+    name: l.name,
+    imageUrl: l.imageUrl,
+    websiteUrl: l.websiteUrl ?? "",
+    market: l.market ?? "UAE",
+    published: l.published ?? true,
+    sortOrder: l.sortOrder ?? idx,
+    createdAt: nowIso,
+    updatedAt: nowIso,
+  }));
+
   return {
-    categories: [] as Category[],
-    products: [] as Product[],
+    categories: fallbackCategories,
+    products: fallbackProducts,
     contentBlocks: fallbackContent,
-    catalogEditorials: [] as CatalogEditorial[],
+    catalogEditorials: fallbackEditorials,
     settings: fallbackSettings,
-    seoEntries: fallbackSeo,
-    clientLogos: [] as ClientLogo[],
-    blogs: [] as BlogPost[],
+    seoEntries: allSeoEntries,
+    clientLogos: fallbackClientLogos,
+    blogs: fallbackBlogs,
     content: toRecord(fallbackContent),
     setting: toRecord(fallbackSettings),
-    seo: Object.fromEntries(fallbackSeo.map((entry) => [entry.key, entry])),
+    seo: Object.fromEntries(allSeoEntries.map((entry) => [entry.key, entry])),
   };
 }
 
@@ -2266,7 +2378,6 @@ export async function getPublishedBlogPosts(options?: {
   page?: number;
   pageSize?: number;
 }) {
-  await ensureSeedData();
   const requestedPage = Number(options?.page);
   const requestedPageSize = Number(options?.pageSize);
   const page = Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1;
@@ -2274,129 +2385,301 @@ export async function getPublishedBlogPosts(options?: {
     Number.isInteger(requestedPageSize) && requestedPageSize > 0
       ? Math.min(requestedPageSize, 48)
       : 12;
-  const db = getDb();
 
-  const [postRows, totalRows, context] = await Promise.all([
-    db
-      .select(publicBlogListFields)
-      .from(blogPosts)
-      .where(eq(blogPosts.status, "published"))
-      .orderBy(
-        desc(blogPosts.publishedAt),
-        asc(blogPosts.sortOrder),
-        desc(blogPosts.createdAt),
-      )
-      .limit(pageSize)
-      .offset((page - 1) * pageSize),
-    db
-      .select({ value: count() })
-      .from(blogPosts)
-      .where(eq(blogPosts.status, "published")),
-    getBlogPageContext(),
-  ]);
+  try {
+    await ensureSeedData();
+    const db = getDb();
+    const [postRows, totalRows, context] = await Promise.all([
+      db
+        .select(publicBlogListFields)
+        .from(blogPosts)
+        .where(eq(blogPosts.status, "published"))
+        .orderBy(
+          desc(blogPosts.publishedAt),
+          asc(blogPosts.sortOrder),
+          desc(blogPosts.createdAt),
+        )
+        .limit(pageSize)
+        .offset((page - 1) * pageSize),
+      db
+        .select({ value: count() })
+        .from(blogPosts)
+        .where(eq(blogPosts.status, "published")),
+      getBlogPageContext(),
+    ]);
 
-  const total = Number(totalRows[0]?.value || 0);
-  return {
-    posts: postRows,
-    total,
-    page,
-    pageSize,
-    totalPages: Math.ceil(total / pageSize),
-    ...context,
-  };
+    const total = Number(totalRows[0]?.value || 0);
+    return {
+      posts: postRows,
+      total,
+      page,
+      pageSize,
+      totalPages: Math.ceil(total / pageSize),
+      ...context,
+    };
+  } catch (error) {
+    console.warn("Could not query blog posts from DB, using fallback:", error);
+    const fallbackData = getFallbackSiteData();
+    const published = fallbackData.blogs.filter((b) => b.status === "published");
+    const total = published.length;
+    const posts = published.slice((page - 1) * pageSize, page * pageSize).map((b) => ({
+      id: b.id,
+      slug: b.slug,
+      legacySlug: b.legacySlug,
+      title: b.title,
+      excerpt: b.excerpt,
+      featuredImageUrl: b.featuredImageUrl,
+      imageAlt: b.imageAlt,
+      author: b.author,
+      category: b.category,
+      tags: b.tags,
+      publishedAt: b.publishedAt,
+      featured: b.featured,
+      sortOrder: b.sortOrder,
+      updatedAt: b.updatedAt,
+    }));
+    return {
+      posts,
+      total,
+      page,
+      pageSize,
+      totalPages: Math.ceil(total / pageSize),
+      contentBlocks: fallbackData.contentBlocks,
+      settings: fallbackData.settings,
+      seoEntries: fallbackData.seoEntries,
+      content: fallbackData.content,
+      setting: fallbackData.setting,
+      seo: fallbackData.seo,
+    };
+  }
 }
 
 export async function getBlogPostPage(slug: string) {
-  await ensureSeedData();
   const normalized = normalizeBlogSlug(slug);
   if (!normalized) return null;
 
-  const db = getDb();
-  const [postRows, context] = await Promise.all([
-    db
+  try {
+    await ensureSeedData();
+    const db = getDb();
+    const [postRows, context] = await Promise.all([
+      db
+        .select(publicBlogDetailFields)
+        .from(blogPosts)
+        .where(
+          and(
+            eq(blogPosts.status, "published"),
+            or(eq(blogPosts.slug, normalized), eq(blogPosts.legacySlug, normalized)),
+          ),
+        )
+        .limit(1),
+      getBlogPageContext(),
+    ]);
+    const post = postRows[0];
+    if (post) {
+      const relatedPosts = await db
+        .select(publicBlogListFields)
+        .from(blogPosts)
+        .where(
+          and(
+            eq(blogPosts.status, "published"),
+            eq(blogPosts.category, post.category),
+          ),
+        )
+        .orderBy(desc(blogPosts.publishedAt), asc(blogPosts.sortOrder))
+        .limit(4);
+
+      return {
+        post,
+        relatedPosts: relatedPosts.filter((entry) => entry.id !== post.id).slice(0, 3),
+        seoEntry: context.seo[`blog:${post.id}`] ?? null,
+        ...context,
+      };
+    }
+  } catch (error) {
+    console.warn("Could not query blog post by slug from DB, using fallback:", error);
+  }
+
+  const fallbackData = getFallbackSiteData();
+  const fallbackPost = fallbackData.blogs.find(
+    (b) =>
+      b.status === "published" &&
+      (b.slug === normalized || b.legacySlug === normalized),
+  );
+  if (!fallbackPost) return null;
+
+  const post = {
+    id: fallbackPost.id,
+    slug: fallbackPost.slug,
+    legacySlug: fallbackPost.legacySlug,
+    title: fallbackPost.title,
+    excerpt: fallbackPost.excerpt,
+    bodyHtml: fallbackPost.bodyHtml,
+    featuredImageUrl: fallbackPost.featuredImageUrl,
+    imageAlt: fallbackPost.imageAlt,
+    author: fallbackPost.author,
+    category: fallbackPost.category,
+    tags: fallbackPost.tags,
+    publishedAt: fallbackPost.publishedAt,
+    featured: fallbackPost.featured,
+    sortOrder: fallbackPost.sortOrder,
+    updatedAt: fallbackPost.updatedAt,
+  };
+
+  const related = fallbackData.blogs
+    .filter(
+      (b) =>
+        b.status === "published" &&
+        b.category === fallbackPost.category &&
+        b.id !== fallbackPost.id,
+    )
+    .slice(0, 3)
+    .map((b) => ({
+      id: b.id,
+      slug: b.slug,
+      legacySlug: b.legacySlug,
+      title: b.title,
+      excerpt: b.excerpt,
+      featuredImageUrl: b.featuredImageUrl,
+      imageAlt: b.imageAlt,
+      author: b.author,
+      category: b.category,
+      tags: b.tags,
+      publishedAt: b.publishedAt,
+      featured: b.featured,
+      sortOrder: b.sortOrder,
+      updatedAt: b.updatedAt,
+    }));
+
+  return {
+    post,
+    relatedPosts: related,
+    seoEntry: fallbackData.seo[`blog:${fallbackPost.id}`] ?? null,
+    contentBlocks: fallbackData.contentBlocks,
+    settings: fallbackData.settings,
+    seoEntries: fallbackData.seoEntries,
+    content: fallbackData.content,
+    setting: fallbackData.setting,
+    seo: fallbackData.seo,
+  };
+}
+
+export async function getBlogPostByLegacySlug(legacySlug: string) {
+  const normalized = normalizeBlogSlug(legacySlug);
+  if (!normalized) return null;
+
+  try {
+    await ensureSeedData();
+    const [post] = await getDb()
       .select(publicBlogDetailFields)
       .from(blogPosts)
       .where(
         and(
           eq(blogPosts.status, "published"),
-          or(eq(blogPosts.slug, normalized), eq(blogPosts.legacySlug, normalized)),
+          eq(blogPosts.legacySlug, normalized),
         ),
       )
-      .limit(1),
-    getBlogPageContext(),
-  ]);
-  const post = postRows[0];
-  if (!post) return null;
+      .limit(1);
+    if (post) return post;
+  } catch (error) {
+    console.warn("Could not query blog post by legacy slug from DB:", error);
+  }
 
-  const relatedPosts = await db
-    .select(publicBlogListFields)
-    .from(blogPosts)
-    .where(
-      and(
-        eq(blogPosts.status, "published"),
-        eq(blogPosts.category, post.category),
-      ),
-    )
-    .orderBy(desc(blogPosts.publishedAt), asc(blogPosts.sortOrder))
-    .limit(4);
-
+  const fallback = getFallbackSiteData();
+  const found = fallback.blogs.find(
+    (b) => b.status === "published" && b.legacySlug === normalized,
+  );
+  if (!found) return null;
   return {
-    post,
-    relatedPosts: relatedPosts.filter((entry) => entry.id !== post.id).slice(0, 3),
-    seoEntry: context.seo[`blog:${post.id}`] ?? null,
-    ...context,
+    id: found.id,
+    slug: found.slug,
+    legacySlug: found.legacySlug,
+    title: found.title,
+    excerpt: found.excerpt,
+    bodyHtml: found.bodyHtml,
+    featuredImageUrl: found.featuredImageUrl,
+    imageAlt: found.imageAlt,
+    author: found.author,
+    category: found.category,
+    tags: found.tags,
+    publishedAt: found.publishedAt,
+    featured: found.featured,
+    sortOrder: found.sortOrder,
+    updatedAt: found.updatedAt,
   };
 }
 
-export async function getBlogPostByLegacySlug(legacySlug: string) {
-  await ensureSeedData();
-  const normalized = normalizeBlogSlug(legacySlug);
-  if (!normalized) return null;
-
-  const [post] = await getDb()
-    .select(publicBlogDetailFields)
-    .from(blogPosts)
-    .where(
-      and(
-        eq(blogPosts.status, "published"),
-        eq(blogPosts.legacySlug, normalized),
-      ),
-    )
-    .limit(1);
-  return post ?? null;
-}
-
 export async function getBlogPostBySourceUrl(sourceUrl: string) {
-  await ensureSeedData();
   const candidate = sourceUrl.trim().slice(0, 512);
   if (!candidate) return null;
 
-  const [post] = await getDb()
-    .select(publicBlogDetailFields)
-    .from(blogPosts)
-    .where(
-      and(
-        eq(blogPosts.status, "published"),
-        eq(blogPosts.sourceUrl, candidate),
-      ),
-    )
-    .limit(1);
-  return post ?? null;
+  try {
+    await ensureSeedData();
+    const [post] = await getDb()
+      .select(publicBlogDetailFields)
+      .from(blogPosts)
+      .where(
+        and(
+          eq(blogPosts.status, "published"),
+          eq(blogPosts.sourceUrl, candidate),
+        ),
+      )
+      .limit(1);
+    if (post) return post;
+  } catch (error) {
+    console.warn("Could not query blog post by source url from DB:", error);
+  }
+
+  const fallback = getFallbackSiteData();
+  const found = fallback.blogs.find(
+    (b) => b.status === "published" && b.sourceUrl === candidate,
+  );
+  if (!found) return null;
+  return {
+    id: found.id,
+    slug: found.slug,
+    legacySlug: found.legacySlug,
+    title: found.title,
+    excerpt: found.excerpt,
+    bodyHtml: found.bodyHtml,
+    featuredImageUrl: found.featuredImageUrl,
+    imageAlt: found.imageAlt,
+    author: found.author,
+    category: found.category,
+    tags: found.tags,
+    publishedAt: found.publishedAt,
+    featured: found.featured,
+    sortOrder: found.sortOrder,
+    updatedAt: found.updatedAt,
+  };
 }
 
 export async function getPublishedBlogSitemapEntries() {
-  await ensureSeedData();
-  return getDb()
-    .select({
-      id: blogPosts.id,
-      slug: blogPosts.slug,
-      legacySlug: blogPosts.legacySlug,
-      publishedAt: blogPosts.publishedAt,
-      updatedAt: blogPosts.updatedAt,
-    })
-    .from(blogPosts)
-    .where(eq(blogPosts.status, "published"))
-    .orderBy(desc(blogPosts.publishedAt), asc(blogPosts.sortOrder));
+  try {
+    await ensureSeedData();
+    return await getDb()
+      .select({
+        id: blogPosts.id,
+        slug: blogPosts.slug,
+        legacySlug: blogPosts.legacySlug,
+        publishedAt: blogPosts.publishedAt,
+        updatedAt: blogPosts.updatedAt,
+      })
+      .from(blogPosts)
+      .where(eq(blogPosts.status, "published"))
+      .orderBy(desc(blogPosts.publishedAt), asc(blogPosts.sortOrder));
+  } catch (error) {
+    console.warn("Could not query blog sitemap entries from DB:", error);
+    const fallback = getFallbackSiteData();
+    return fallback.blogs
+      .filter((b) => b.status === "published")
+      .map((b) => ({
+        id: b.id,
+        slug: b.slug,
+        legacySlug: b.legacySlug,
+        publishedAt: b.publishedAt,
+        updatedAt: b.updatedAt,
+      }));
+  }
 }
 
 export async function getPublicCatalog(options?: {
@@ -2474,20 +2757,31 @@ export async function getProductPage(slug: string) {
 }
 
 export async function getRecentInquiries(limit = 20) {
-  await ensureSeedData();
-  return getDb()
-    .select()
-    .from(inquiries)
-    .orderBy(desc(inquiries.createdAt))
-    .limit(limit);
+  try {
+    await ensureSeedData();
+    return await getDb()
+      .select()
+      .from(inquiries)
+      .orderBy(desc(inquiries.createdAt))
+      .limit(limit);
+  } catch (error) {
+    console.warn("Could not query inquiries from DB:", error);
+    return [];
+  }
 }
 
 export async function getProductById(id: string) {
-  await ensureSeedData();
-  const [product] = await getDb()
-    .select()
-    .from(products)
-    .where(eq(products.id, id))
-    .limit(1);
-  return product ?? null;
+  try {
+    await ensureSeedData();
+    const [product] = await getDb()
+      .select()
+      .from(products)
+      .where(eq(products.id, id))
+      .limit(1);
+    if (product) return product;
+  } catch (error) {
+    console.warn("Could not query product by id from DB:", error);
+  }
+  const fallback = getFallbackSiteData();
+  return fallback.products.find((p) => p.id === id) ?? null;
 }

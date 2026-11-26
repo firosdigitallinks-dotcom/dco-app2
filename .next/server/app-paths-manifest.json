@@ -5,8 +5,8 @@
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/api/admin/session/route": "app/api/admin/session/route.js",
   "/api/admin/upload/route": "app/api/admin/upload/route.js",
-  "/api/admin/data/route": "app/api/admin/data/route.js",
   "/api/inquiries/route": "app/api/inquiries/route.js",
+  "/api/admin/data/route": "app/api/admin/data/route.js",
   "/media/[key]/route": "app/media/[key]/route.js",
   "/about/page": "app/about/page.js",
   "/blog/page": "app/blog/page.js",
@@ -20,13 +20,13 @@
   "/blog.html/page": "app/blog.html/page.js",
   "/blog/[offset]/page": "app/blog/[offset]/page.js",
   "/catalog.html/page": "app/catalog.html/page.js",
-  "/blog/details/[slug]/page": "app/blog/details/[slug]/page.js",
   "/chairmans-message.html/page": "app/chairmans-message.html/page.js",
   "/contact.html/page": "app/contact.html/page.js",
   "/faq.html/page": "app/faq.html/page.js",
+  "/blog/details/[slug]/page": "app/blog/details/[slug]/page.js",
   "/category/[slug]/page": "app/category/[slug]/page.js",
   "/index.html/page": "app/index.html/page.js",
   "/vision-mission.html/page": "app/vision-mission.html/page.js",
-  "/page": "app/page.js",
-  "/product/[slug]/page": "app/product/[slug]/page.js"
+  "/product/[slug]/page": "app/product/[slug]/page.js",
+  "/page": "app/page.js"
 }

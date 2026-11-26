@@ -5,8 +5,8 @@
   "/sitemap.xml/route": "/sitemap.xml",
   "/api/admin/session/route": "/api/admin/session",
   "/api/admin/upload/route": "/api/admin/upload",
-  "/api/admin/data/route": "/api/admin/data",
   "/api/inquiries/route": "/api/inquiries",
+  "/api/admin/data/route": "/api/admin/data",
   "/media/[key]/route": "/media/[key]",
   "/about/page": "/about",
   "/blog/page": "/blog",
@@ -20,13 +20,13 @@
   "/blog.html/page": "/blog.html",
   "/blog/[offset]/page": "/blog/[offset]",
   "/catalog.html/page": "/catalog.html",
-  "/blog/details/[slug]/page": "/blog/details/[slug]",
   "/chairmans-message.html/page": "/chairmans-message.html",
   "/contact.html/page": "/contact.html",
   "/faq.html/page": "/faq.html",
+  "/blog/details/[slug]/page": "/blog/details/[slug]",
   "/category/[slug]/page": "/category/[slug]",
   "/index.html/page": "/index.html",
   "/vision-mission.html/page": "/vision-mission.html",
-  "/page": "/",
-  "/product/[slug]/page": "/product/[slug]"
+  "/product/[slug]/page": "/product/[slug]",
+  "/page": "/"
 }
